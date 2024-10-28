@@ -3,6 +3,7 @@ result.py
 
 This module loads the CIFAR-10 dataset, displays sample images, and uses a pre-trained model 
 to make predictions on a given image.
+
 """
 
 import numpy as np
