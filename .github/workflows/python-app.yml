@@ -7,10 +7,10 @@ on:
   push: 
     branches: [ dev ] 
     paths: 
-    - 'modelcreation.py' 
-    - 'app.py'
-    - 'result.py'
-    - 'lint.py' 
+    - 'Image-Classifier-main/modelcreation.py' 
+    - 'Image-Classifier-main/app.py'
+    - 'Image-Classifier-main/result.py'
+    - 'Image-Classifier-main/lint.py' 
 
 jobs: 
   build: 
