@@ -25,10 +25,12 @@ jobs:
       run: | 
         python -m pip install --upgrade pip 
         pip install pylint 
+    - name: Check model, app and result
+      run: |
+        python modelcreation.py 
     - name: Lint with pylint 
       run: | 
         python Image-Classifier-main/lint.py
-        python Image-Classifier-main/modelcreation.py 
 
     #- uses: pre-commit-ci/lite-action@v1.1.0
     #if: always()
