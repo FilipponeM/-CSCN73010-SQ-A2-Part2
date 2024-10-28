@@ -11,6 +11,9 @@ on:
     - 'Image-Classifier-main/app.py'
     - 'Image-Classifier-main/result.py'
     - 'Image-Classifier-main/lint.py' 
+    - 'Image-Classifier-main/test_app.py'
+    - 'Image-Classifier-main/test_modelcreation.py'
+    - 'Image-Classifier-main/test_result.py'
 
 jobs: 
   build: 
