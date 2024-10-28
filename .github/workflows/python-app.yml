@@ -5,7 +5,7 @@ name: Python application
 
 on: 
   push: 
-    branches: [ dev ] 
+    branches: [ main ] 
     paths: 
     - 'Image-Classifier-main/modelcreation.py' 
     - 'Image-Classifier-main/app.py'
