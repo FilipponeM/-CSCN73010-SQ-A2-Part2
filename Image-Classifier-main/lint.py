@@ -6,7 +6,7 @@ from pylint import lint
 
 #THRESHOLD = 7 
 
-run = lint.Run(["Image-Classifier-main/modelcreation", "Image-Classifier-main/app", "Image-Classifier-main/result"], exit=False) 
+run = lint.Run(["modelcreation", "app", "result"], exit=False) 
 
 score = run.linter.stats.global_note 
 
