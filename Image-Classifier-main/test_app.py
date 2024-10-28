@@ -28,5 +28,3 @@ class TestApp:
         img = self.preprocess_image(img_path)
         assert img.shape == (1, 32, 32, 3)  
 
-    def test_four_pass(self):
-        
