@@ -1,6 +1,13 @@
+"""
+modelcreation.py
+
+The model creation code needs to be run to train the model using the pre-provided
+pictures and classify the photos with class names such as car, plane, and bird.
+This training is performed using the CIFAR-10 datase
+
+"""
+
 # Import necessary libraries
-import numpy as np
-import cv2 as cv
 import matplotlib.pyplot as plt
 from tensorflow.keras import datasets, layers, models
 

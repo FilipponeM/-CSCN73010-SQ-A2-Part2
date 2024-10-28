@@ -1,3 +1,10 @@
+"""
+result.py
+
+This module loads the CIFAR-10 dataset, displays sample images, and uses a pre-trained model 
+to make predictions on a given image.
+"""
+
 import numpy as np
 import cv2 as cv
 import matplotlib.pyplot as plt
@@ -20,8 +27,6 @@ for i in range(16):
 plt.show()
 
 # Constructing neural net
-
-
 # Load the pre-trained model
 
 model = models.load_model('image_classifier.model')
