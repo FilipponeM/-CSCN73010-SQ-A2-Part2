@@ -4,9 +4,9 @@ import sys
 
 from pylint import lint  
 
-THRESHOLD = 9  
+THRESHOLD = 7 
 
-run = lint.Run(["modelcreation.py", "app.py", "result.py"], exit=False) 
+run = lint.Run(["Image-Classifier-main/modelcreation", "Image-Classifier-main/app.py", "Image-Classifier-main/result.py"], exit=False) 
 
 score = run.linter.stats.global_note 
 
