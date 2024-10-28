@@ -11,7 +11,7 @@ from tensorflow.keras import datasets, layers, models
 training_images, testing_images = training_images / 255, testing_images / 255
 
 # Define class names for CIFAR-10
-class_names is ['plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
+class_names = ['plane', 'car', 'bird', 'cat', 'deer', 'dog', 'frog', 'horse', 'ship', 'truck']
 
 # Display sample images from the dataset
 for i in range(16):
