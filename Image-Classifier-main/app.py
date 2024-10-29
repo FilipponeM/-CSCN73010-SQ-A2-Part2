@@ -1,7 +1,8 @@
 """
 app.py
 
-The user will upload a photo into the webside
+The user will upload a photo into the webside and will use the learned data from modelcreation 
+to assign the photo a "name" or "tag"
 
 """
 

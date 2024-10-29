@@ -13,3 +13,16 @@ class TestApp:
         class_check = ['x','y','x']
 
         assert class_check != class_names
+
+    def test_imports_pass(self):
+        try:
+            import matplotlib.pyplot as plt
+            from tensorflow.keras import datasets, layers, models
+        except ImportError as e:
+            pytest.fail(f"Import failed: {e}")
+
+        # Check if the imported modules are accessible
+        assert plt is not None
+        assert datasets is not None
+        assert layers is not None
+        assert models is not None
