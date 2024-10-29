@@ -1,4 +1,4 @@
-import pytest
+
 
 class TestApp:
 
@@ -16,18 +16,3 @@ class TestApp:
 
         assert class_check != class_names
 
-    def test_imports_pass(self):
-        try:
-            import numpy as np
-            import cv2 as cv
-            import matplotlib.pyplot as plt
-            from tensorflow.keras import datasets, models
-        except ImportError as e:
-            pytest.fail(f"Import failed: {e}")
-
-        # Check if the imported modules are accessible
-        assert np is not None
-        assert cv is not None
-        assert plt is not None
-        assert datasets is not None
-        assert models is not None

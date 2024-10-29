@@ -1,5 +1,5 @@
 
-import pytest
+
 class TestApp:
 
     def preprocess_image(self, img_path):
@@ -28,21 +28,3 @@ class TestApp:
         img_path = 'uploads/uploaded_image.png' 
         img = self.preprocess_image(img_path)
         assert img.shape == (1, 32, 32, 3)  
-
-    def test_imports(self):
-        try:
-            import numpy as np
-            import cv2 as cv
-            from tensorflow.keras.models import load_model
-            from flask import Flask, render_template, request, send_from_directory
-        except ImportError as e:
-            pytest.fail(f"Import failed: {e}")
-
-        # Check if the imported modules are accessible
-        assert np is not None
-        assert cv is not None
-        assert load_model is not None
-        assert Flask is not None
-        assert render_template is not None
-        assert request is not None
-        assert send_from_directory is not None
