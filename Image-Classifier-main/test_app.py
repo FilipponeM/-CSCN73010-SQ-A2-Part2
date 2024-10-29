@@ -1,5 +1,5 @@
 
-
+import pytest
 class TestApp:
 
     def preprocess_image(self, img_path):
@@ -29,7 +29,7 @@ class TestApp:
         img = self.preprocess_image(img_path)
         assert img.shape == (1, 32, 32, 3)  
 
-    def test_imports_pass(self):
+    def test_imports(self):
         try:
             import numpy as np
             import cv2 as cv

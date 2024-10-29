@@ -1,3 +1,5 @@
+import pytest
+
 class TestApp:
 
     def test_one_CIFAR10Names_pass(self):
@@ -14,7 +16,7 @@ class TestApp:
 
         assert class_check != class_names
 
-    def test_imports_pass(seld):
+    def test_imports_pass(self):
         try:
             import numpy as np
             import cv2 as cv

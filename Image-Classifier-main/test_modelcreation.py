@@ -1,3 +1,6 @@
+
+import pytest
+
 class TestApp:
 
     def test_one_CIFAR10Names_pass(self):
